@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:name=".DiagnosticApplication" android:allowBackup="false" android:icon="@mipmap/ic_launcher" android:label="滑码键盘" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" android:exported="false" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ImeSettingsActivity" android:exported="true" />
+        <service android:name=".SwipeCodeImeService" android:label="滑码键盘 · SwipeCode" android:exported="true"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter><action android:name="android.view.InputMethod" /></intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/input_method" />
+        </service>
+        <activity android:name=".StartupActivity" android:exported="true" android:theme="@android:style/Theme.Material.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

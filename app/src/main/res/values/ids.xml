@@ -1,0 +1,8 @@
+<resources>
+    <item name="ime_test_editor" type="id" />
+    <item name="symbol_center" type="id" />
+    <item name="trial_editor" type="id" /><item name="trial_keyboard" type="id" />
+    <item name="layout_preview" type="id" /><item name="symbol_up" type="id" />
+    <item name="symbol_down" type="id" /><item name="symbol_left" type="id" />
+    <item name="symbol_right" type="id" /><item name="restore_layout" type="id" />
+</resources>
